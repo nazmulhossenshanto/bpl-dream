@@ -1,17 +1,18 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
-        <div>
+        <div className='flex justify-between items-center
+        '>
             <div>
-                <img src="/src/assets/logo.png" alt="" />
+                <img className='h-18' src="./src/assets/logo.png" alt="" />
             </div>
-            <div>
-                <p>Home</p>
+            <div className='flex gap-4'>
+                <p>Home</p>  
                 <p>Fixture</p>
                 <p>Teams</p>
                 <p>Schedules</p>
-                <p>0 Coin <i class="fa-solid fa-dollar-sign"></i></p>
+                <p className='font-bold'>{coin} Coin <i className="fa-solid fa-dollar-sign text-yellow-500"></i></p>
             </div>
         </div>
     );

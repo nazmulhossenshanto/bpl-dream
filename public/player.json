@@ -1,0 +1,68 @@
+[
+    {
+        "player_name": "Virat Kohli",
+        "country": "India",
+        "country_flag": "https://flagcdn.com/w40/in.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/164.png",
+        "batsman_category": "Top Order",
+        "batting_role": "Batsman",
+        "batting_hand": "Right Hand",
+        "bowling_style": "Off Spin",
+        "price": 18000
+    },
+    {
+        "player_name": "David Warner",
+        "country": "Australia",
+        "country_flag": "https://flagcdn.com/w40/au.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/219.png",
+        "batsman_category": "Opener",
+        "batting_role": "Batsman",
+        "batting_hand": "Left Hand",
+        "bowling_style": "Leg Spin",
+        "price": 15000
+    },
+    {
+        "player_name": "Babar Azam",
+        "country": "Pakistan",
+        "country_flag": "https://flagcdn.com/w40/pk.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/2759.png",
+        "batsman_category": "Top Order",
+        "batting_role": "Batsman",
+        "batting_hand": "Right Hand",
+        "bowling_style": "Off Spin",
+        "price": 17000
+    },
+    {
+        "player_name": "Ben Stokes",
+        "country": "England",
+        "country_flag": "https://flagcdn.com/w40/gb.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/1154.png",
+        "batsman_category": "Middle Order",
+        "batting_role": "All-Rounder",
+        "batting_hand": "Left Hand",
+        "bowling_style": "Leg Spin",
+        "price": 20000
+    },
+    {
+        "player_name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "country_flag": "https://flagcdn.com/w40/bd.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/201.png",
+        "batsman_category": "All Rounder",
+        "batting_role": "All-Rounder",
+        "batting_hand": "Left Hand",
+        "bowling_style": "Off Spin",
+        "price": 16000
+    },
+    {
+        "player_name": "Quinton de Kock",
+        "country": "South Africa",
+        "country_flag": "https://flagcdn.com/w40/za.png",
+        "player_image": "https://resources.pulse.icc-cricket.com/players/284/558.png",
+        "batsman_category": "Opener",
+        "batting_role": "Wicketkeeper-Batsman",
+        "batting_hand": "Left Hand",
+        "bowling_style": "Off Spin",
+        "price": 14000
+    }
+]
