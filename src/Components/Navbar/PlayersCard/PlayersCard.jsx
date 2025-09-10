@@ -2,7 +2,7 @@
 import AvailablePlayers from '../../AvailablePlayers/AvailablePlayers';
 import SelectedPlayers from '../../SelectedPlayers/SelectedPlayers';
  
- const PlayersCard = ({players, handlSelectedPlayer, selectedPlayers}) => {
+ const PlayersCard = ({players, handlSelectedPlayer, selectedPlayers, removePlayer}) => {
     return (
         <div>
             {/* available players */}
@@ -24,6 +24,7 @@ import SelectedPlayers from '../../SelectedPlayers/SelectedPlayers';
                         <SelectedPlayers
                         key={idx}
                         selectedPlayer={selectedPlayer}
+                        removePlayer={removePlayer}
                         ></SelectedPlayers>
                     ))
                 }

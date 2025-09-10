@@ -1,7 +1,7 @@
 import React from "react";
 
-const SelectedPlayers = ({ selectedPlayer }) => {
-  const { player_image, player_name, batting_hand } = selectedPlayer;
+const SelectedPlayers = ({ selectedPlayer, removePlayer }) => {
+  const { player_image, player_name, batting_hand, id } = selectedPlayer;
   return (
     <div>
       <div className="flex p-4 justify-between items-center border-2 border-gray-400 mt-5 rounded-lg">
@@ -16,7 +16,7 @@ const SelectedPlayers = ({ selectedPlayer }) => {
             </div>
         </div>
         {/* right side */}
-        <button className="btn">
+        <button onClick={()=> removePlayer(id)} className="btn">
           <i className="fa-solid fa-trash text-red-500"></i>
         </button>
       </div>
