@@ -8,6 +8,10 @@ function App() {
   const [coin, setCoin] = useState(0);
   const [players, setPlayers] = useState([]);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [status, setStatus] = useState(true);
+  const handleStatus = (message) =>{
+    setStatus(message);
+  }
   useEffect(() => {
     fetch("player.json")
       .then((res) => res.json())
@@ -35,6 +39,8 @@ function App() {
         handlSelectedPlayer={handlSelectedPlayer}
         selectedPlayers={selectedPlayers}
         removePlayer={removePlayer}
+        handleStatus={handleStatus}
+        status={status}
       ></PlayersCard>
     </>
   );
