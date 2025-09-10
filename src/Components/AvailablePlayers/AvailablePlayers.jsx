@@ -1,24 +1,35 @@
 import React from "react";
 
 const AvailablePlayers = ({player}) => {
+  const {player_image, player_name, country, batting_role, batting_hand, bowling_style, price} = player;
   return (
     <div>
         
-      <div class="card bg-base-100 w-96 shadow-sm">
+      <div className="card border-2 border-gray-400 rounded-lg shadow-sm  p-6">
         <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
+          <img className="w-full h-60 object-cover rounded-lg"
+            src={player_image}
+            alt="player image"
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">Available players : {player.player_name}</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
+        <div className="card-body space-y-4 mt-4">
+          <h2 className="card-title font-bold"><i className="fa-solid fa-user"></i> {player_name}</h2>
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <p><i className="fa-solid fa-flag"></i></p>
+              <p className="font-bold">{country}</p>
+            </div>
+            <p className="text-gray-500  rounded-lg bg-[#D9D9D9] p-2">{batting_role}</p>
+          </div>
+          <hr />
+          <h3 className="font-bold">Rating</h3>
+          <div className="flex justify-between items-center">
+            <p className="font-bold">{batting_hand}</p>
+            <p className="text-gray-500">{bowling_style}</p>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="font-bold">Price: ${price}</p>
+            <button className="btn box-border border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer">Choose Player</button>
           </div>
         </div>
       </div>
