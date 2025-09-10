@@ -8,6 +8,7 @@ import PlayersCard from './Components/Navbar/PlayersCard/PlayersCard';
 function App() {
   const [coin, setCoin] = useState(0);
   const [players, setPlayers] = useState([]);
+  const [selectedPlayers, setSelectedPlayers] = useState([])
   useEffect(()=>{
     fetch('player.json')
     .then(res => res.json())
@@ -17,9 +18,9 @@ function App() {
     setCoin(coin + 6000)
     console.log('adding coin')
   };
-  // const handlePlayers = () => {
-  //   console
-  // }
+  const handlSelectedPlayer = (player) => {
+    setSelectedPlayers([...selectedPlayers, player])
+  }
 
   return (
     <>
@@ -27,7 +28,11 @@ function App() {
       <h1 className='text-2xl'>Vite + React</h1>
       <Navbar coin={coin}></Navbar>
       <Hero handleCoin={handleCoin}></Hero>
-      <PlayersCard players={players}></PlayersCard>
+      <PlayersCard
+       players={players}
+       handlSelectedPlayer={handlSelectedPlayer}
+       selectedPlayers={selectedPlayers}
+       ></PlayersCard>
     </>
   )
 }

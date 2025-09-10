@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "player_name": "Virat Kohli",
     "country": "India",
     "country_flag": "https://flagcdn.com/w40/in.png",
@@ -11,6 +12,7 @@
     "price": 18000
   },
   {
+    "id": 2,
     "player_name": "David Warner",
     "country": "Australia",
     "country_flag": "https://flagcdn.com/w40/au.png",
@@ -22,6 +24,7 @@
     "price": 15000
   },
   {
+    "id": 3,
     "player_name": "Babar Azam",
     "country": "Pakistan",
     "country_flag": "https://flagcdn.com/w40/pk.png",
@@ -33,6 +36,7 @@
     "price": 17000
   },
   {
+    "id": 4,
     "player_name": "Ben Stokes",
     "country": "England",
     "country_flag": "https://flagcdn.com/w40/gb.png",
@@ -44,6 +48,7 @@
     "price": 20000
   },
   {
+    "id": 5,
     "player_name": "Shakib Al Hasan",
     "country": "Bangladesh",
     "country_flag": "https://flagcdn.com/w40/bd.png",
@@ -55,12 +60,13 @@
     "price": 16000
   },
   {
+    "id": 6,
     "player_name": "Quinton de Kock",
     "country": "South Africa",
     "country_flag": "https://flagcdn.com/w40/za.png",
     "player_image": "https://www.cricbuzz.com/a/img/v1/192x192/i1/c170421/quinton-de-kock.jpg",
     "batsman_category": "Opener",
-    "batting_role": "Wicketkeeper-Batsman",
+    "batting_role": "Batsman",
     "batting_hand": "Left Hand",
     "bowling_style": "Off Spin",
     "price": 14000

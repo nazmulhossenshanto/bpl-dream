@@ -1,9 +1,9 @@
 import React from "react";
 
-const AvailablePlayers = ({player}) => {
+const AvailablePlayers = ({player, handlSelectedPlayer}) => {
   const {player_image, player_name, country, batting_role, batting_hand, bowling_style, price} = player;
   return (
-    <div>
+    <div className="mb-4">
         
       <div className="card border-2 border-gray-400 rounded-lg shadow-sm  p-6">
         <figure>
@@ -29,7 +29,7 @@ const AvailablePlayers = ({player}) => {
           </div>
           <div className="flex justify-between items-center">
             <p className="font-bold">Price: ${price}</p>
-            <button className="btn box-border border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer">Choose Player</button>
+            <button onClick={()=> handlSelectedPlayer(player)} className="btn box-border border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer">Choose Player</button>
           </div>
         </div>
       </div>

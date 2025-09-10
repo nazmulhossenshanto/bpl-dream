@@ -1,7 +1,8 @@
  import React from 'react';
 import AvailablePlayers from '../../AvailablePlayers/AvailablePlayers';
+import SelectedPlayers from '../../SelectedPlayers/SelectedPlayers';
  
- const PlayersCard = ({players}) => {
+ const PlayersCard = ({players, handlSelectedPlayer, selectedPlayers}) => {
     return (
         <div>
             {/* available players */}
@@ -9,12 +10,24 @@ import AvailablePlayers from '../../AvailablePlayers/AvailablePlayers';
                 {
                     players.map((player)=>(
                         <AvailablePlayers
+                        key={player.id}
                         player={player}
+                        handlSelectedPlayer={handlSelectedPlayer}
                         ></AvailablePlayers>
                     ))
                 }
             </div>
             {/* selected players */}
+            <div>
+                {
+                    selectedPlayers.map((selectedPlayer, idx)=>(
+                        <SelectedPlayers
+                        key={idx}
+                        selectedPlayer={selectedPlayer}
+                        ></SelectedPlayers>
+                    ))
+                }
+            </div>
         </div>
     );
  };
