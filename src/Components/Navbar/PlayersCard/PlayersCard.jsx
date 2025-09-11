@@ -11,7 +11,7 @@ const PlayersCard = ({
   status,
 }) => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto p-4">
       <div className="flex justify-between mt-10">
         <h2 className="text-2xl font-bold">
           Selected Player ( {selectedPlayers.length} / {players.length})

@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./Components/Navbar/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import PlayersCard from "./Components/Navbar/PlayersCard/PlayersCard";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [coin, setCoin] = useState(0);
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-2xl">Vite + React</h1>
+      
       <Navbar coin={coin}></Navbar>
       <Hero handleCoin={handleCoin}></Hero>
       <PlayersCard
@@ -42,6 +43,7 @@ function App() {
         handleStatus={handleStatus}
         status={status}
       ></PlayersCard>
+      <Footer></Footer>
     </>
   );
 }

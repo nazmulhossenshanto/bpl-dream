@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ({coin}) => {
     return (
-        <div className='flex justify-between items-center
+        <div className='flex justify-between items-center max-w-7xl mx-auto p-4
         '>
             <div>
                 <img className='h-18' src="./src/assets/logo.png" alt="" />

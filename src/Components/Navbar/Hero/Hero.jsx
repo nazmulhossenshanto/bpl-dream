@@ -3,7 +3,7 @@ import bgShadow from "../../../assets/bg-shadow.png";
 import bannerMain from "../../../assets/banner-main.png"
 const Hero = ({handleCoin}) => {
   return (
-    <div className="mt-6">
+    <div className=" max-w-7xl mx-auto p-4">
       <div
         className="hero bg-[rgba(19,19,19,1)] py-18 "
         style={{
