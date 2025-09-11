@@ -8,7 +8,7 @@ const PlayersCard = ({
   selectedPlayers,
   removePlayer,
   handleStatus,
-  status,
+  status
 }) => {
   return (
     <div className="max-w-7xl mx-auto p-4">
@@ -39,6 +39,7 @@ const PlayersCard = ({
               key={player.id}
               player={player}
               handlSelectedPlayer={handlSelectedPlayer}
+              selectedPlayers={selectedPlayers}
             ></AvailablePlayers>
           ))}
         </div>

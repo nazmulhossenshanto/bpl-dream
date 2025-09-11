@@ -1,7 +1,8 @@
 import React from "react";
 
-const AvailablePlayers = ({player, handlSelectedPlayer}) => {
-  const {player_image, player_name, country, batting_role, batting_hand, bowling_style, price} = player;
+const AvailablePlayers = ({player, handlSelectedPlayer,  selectedPlayers}) => {
+  const {player_image, player_name, country, batting_role, batting_hand, bowling_style, price, id} = player;
+  const isSelected = selectedPlayers.some(p => p.id === id);
   return (
     <div className="mb-4">
         
@@ -29,7 +30,11 @@ const AvailablePlayers = ({player, handlSelectedPlayer}) => {
           </div>
           <div className="flex justify-between items-center">
             <p className="font-bold">Price: ${price}</p>
-            <button onClick={()=> handlSelectedPlayer(player)} className="btn box-border border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer">Choose Player</button>
+            <button  onClick={()=>
+              handlSelectedPlayer(player)
+              } 
+              disabled={isSelected}
+               className="btn  border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer hover:bg-[#E7FE29]">{isSelected ? "Selected" : "Choose Player"}</button>
           </div>
         </div>
       </div>

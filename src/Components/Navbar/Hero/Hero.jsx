@@ -21,7 +21,7 @@ const Hero = ({handleCoin}) => {
               Assemble Your Ultimate Dream 11 Cricket Team
             </h1>
             <p className="mb-5 text-gray-400">Beyond Boundaries Beyond Limits</p>
-            <button onClick={() => handleCoin()} className="btn font-bold rounded-xl bg-[#E7FE29] shadow-[inset_4px_4px_20px_rgba(19,19,19,0.3)] py-3 px-5">Claim Free Credit</button>
+            <button onClick={() => handleCoin(20000)} className="btn font-bold rounded-xl bg-[#E7FE29] shadow-[inset_4px_4px_20px_rgba(19,19,19,0.3)] py-3 px-5">Claim Free Credit</button>
           </div>
         </div>
       </div>

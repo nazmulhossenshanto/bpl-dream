@@ -34,6 +34,9 @@ const Footer = () => {
               </div>
             </div>
         </div>
+        <div className="my-10 text-center text-gray-400">
+          <p>@2024 Your Company All Rights Reserved.</p>
+        </div>
         {/*  Newsletter Section  */}
         <div className="p-3 border-4 border-white bg-gray-500 rounded-xl w-3/4 absolute top-1/18 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex flex-col justify-center items-center rounded-xl  bg-gradient-to-r from-cyan-200 to-orange-300 space-y-3 py-10 ">
