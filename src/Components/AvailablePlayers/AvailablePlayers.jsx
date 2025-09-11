@@ -33,7 +33,6 @@ const AvailablePlayers = ({player, handlSelectedPlayer,  selectedPlayers}) => {
             <button  onClick={()=>
               handlSelectedPlayer(player)
               } 
-              disabled={isSelected}
                className="btn  border border-[rgba(19,19,19,0.1)] rounded-md p-2 cursor-pointer hover:bg-[#E7FE29]">{isSelected ? "Selected" : "Choose Player"}</button>
           </div>
         </div>

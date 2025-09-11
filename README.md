@@ -1,12 +1,14 @@
-# React + Vite
+ ## Dream 6 Player Selection App :
+ A React-based fantasy cricket application where users can select their favorite players, manage coins, and build their dream team with limited resources.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Technologies Used :
+1. React.js – Frontend framework
+2. Vite – Build tool for fast development
+3. Tailwind CSS – Styling and responsive design
+4. React Toastify – Notifications
+5. Netlify – Deployment
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features : 
+1. Add coins (up to 100,000 max) 
+2. Select maximum 5 players only
+3. Prevents selecting the same player twice

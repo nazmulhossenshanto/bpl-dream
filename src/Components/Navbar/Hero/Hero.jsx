@@ -11,7 +11,7 @@ const Hero = ({handleCoin}) => {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div ></div>
+        
         <div className="hero-content   text-center">
           <div >
             <div className="flex justify-center mt-16">
