@@ -6,7 +6,7 @@ const Navbar = ({coin}) => {
         <div className='flex justify-between items-center max-w-7xl mx-auto p-4  
         '>
             <div>
-                <img className='h-18' src="./src/assets/logo.png" alt="" />
+                <img className='h-18' src="/logo.png" alt="" />
             </div>
             <div className='flex gap-4 text-black font-bold'>
                 <p>Home</p>  
