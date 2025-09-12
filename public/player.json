@@ -70,5 +70,41 @@
     "batting_hand": "Left Hand",
     "bowling_style": "Off Spin",
     "price": 14000
+  },
+  {
+    "id": 7,
+    "player_name": "Kane Williamson",
+    "country": "New Zealand",
+    "country_flag": "https://flagcdn.com/w40/nz.png",
+    "player_image": "https://www.cricbuzz.com/a/img/v1/192x192/i1/c170130/kane-williamson.jpg",
+    "batsman_category": "Top Order",
+    "batting_role": "Batsman",
+    "batting_hand": "Right Hand",
+    "bowling_style": "Off Spin",
+    "price": 17500
+  },
+  {
+    "id": 8,
+    "player_name": "Rashid Khan",
+    "country": "Afghanistan",
+    "country_flag": "https://flagcdn.com/w40/af.png",
+    "player_image": "https://www.cricbuzz.com/a/img/v1/192x192/i1/c170109/rashid-khan.jpg",
+    "batsman_category": "Lower Order",
+    "batting_role": "All-Rounder",
+    "batting_hand": "Right Hand",
+    "bowling_style": "Leg Spin",
+    "price": 15500
+  },
+  {
+    "id": 9,
+    "player_name": "Jasprit Bumrah",
+    "country": "India",
+    "country_flag": "https://flagcdn.com/w40/in.png",
+    "player_image": "https://www.cricbuzz.com/a/img/v1/192x192/i1/c170104/jasprit-bumrah.jpg",
+    "batsman_category": "Tail End",
+    "batting_role": "Bowler",
+    "batting_hand": "Right Hand",
+    "bowling_style": "Fast Bowler",
+    "price": 19000
   }
 ]

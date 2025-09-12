@@ -12,10 +12,8 @@ const PlayersCard = ({
 }) => {
   return (
     <div className="max-w-7xl mx-auto p-4">
-      <div className="flex justify-between mt-10">
-        <h2 className="text-2xl font-bold">
-          Selected Player ( {selectedPlayers.length} / {players.length})
-        </h2>
+      <div className="flex justify-end mt-10">
+        
         <div className="text-gray-400">
           <button
             onClick={() => handleStatus(true)}
@@ -33,7 +31,9 @@ const PlayersCard = ({
       </div>
 
       {status ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+        <div>
+          <h2 className="text-2xl font-bold">Availabe Players</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
           {players.map((player) => (
             <AvailablePlayers
               key={player.id}
@@ -43,8 +43,12 @@ const PlayersCard = ({
             ></AvailablePlayers>
           ))}
         </div>
+        </div>
       ) : (
         <div>
+          <h2 className="text-2xl font-bold">
+          Selected Player ( {selectedPlayers.length} / {players.length})
+        </h2>
           {selectedPlayers.map((selectedPlayer, idx) => (
             <SelectedPlayers
               key={idx}

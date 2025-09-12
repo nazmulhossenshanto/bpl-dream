@@ -36,8 +36,8 @@ function App() {
       toast.error("This player is already selected!");
       return;
     }
-    if (selectedPlayers.length >= 5) {
-      toast.warning("Cannot add more than 5 players!");
+    if (selectedPlayers.length >= 6) {
+      toast.warning("Cannot add more than 6 players!");
       return;
     }
     if (coin < player.price) {
