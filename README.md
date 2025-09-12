@@ -1,4 +1,4 @@
- ## Dream 6 Player Selection App :
+ ## Dream Player Selection App :
  A React-based fantasy cricket application where users can select their favorite players, manage coins, and build their dream team with limited resources.
 
  ## Technologies Used :

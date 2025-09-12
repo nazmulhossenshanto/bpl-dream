@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
-    base: "/bpl-dream/"
+    base: "./"
 })

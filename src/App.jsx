@@ -17,10 +17,11 @@ function App() {
     setStatus(message);
   };
   useEffect(() => {
-    fetch("player.json")
-      .then((res) => res.json())
-      .then((data) => setPlayers(data));
-  }, []);
+  fetch("/player.json")
+    .then((res) => res.json())
+    .then((data) => setPlayers(data));
+}, []);
+
   const handleCoin = (amount) => {
     if (coin + amount < 100001) {
       setCoin(coin + amount);
